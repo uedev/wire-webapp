@@ -24,8 +24,8 @@ module.exports = {
     marks: [
       {
         color: 'red',
-        name: 'FIX',
-        pattern: /FIXME/,
+        name: 'Unsafe HTML bindings',
+        pattern: /html:/,
       },
       {
         color: 'blue',

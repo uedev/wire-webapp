@@ -50,6 +50,7 @@
     "eslint": "4.10.0",
     "eslint-config-prettier": "2.7.0",
     "eslint-plugin-jsdoc": "3.1.3",
+    "eslint-plugin-no-unsanitized": "2.0.1",
     "eslint-plugin-prettier": "2.3.1",
     "grunt": "1.0.1",
     "grunt-aws-s3": "2.0.0",
@@ -103,7 +104,7 @@
     "postinstall": "grunt init",
     "precommit": "lint-staged",
     "start": "grunt",
-    "test:script": "eslint -c .eslintrc.yaml --ignore-path .gitignore --ignore-path .eslintignore app/script/ test/ bin/ grunt/ Gruntfile.js karma.conf.js",
+    "test:script": "eslint -c .eslintrc.yaml --ignore-path .gitignore --ignore-path .eslintignore app/page/ app/script/ test/ bin/ grunt/ Gruntfile.js karma.conf.js",
     "test": "yarn test:script && grunt check && grunt test"
   },
   "private": true,

@@ -5,6 +5,7 @@ env:
   node: true
 
 extends:
+  - plugin:no-unsanitized/DOM
   - prettier
 
 globals:
@@ -47,8 +48,9 @@ globals:
   zeta: true
 
 plugins:
-  - prettier
   - jsdoc
+  - no-unsanitized
+  - prettier
 
 rules:
   curly: 2
@@ -66,6 +68,7 @@ rules:
   no-unused-vars: [2, {args: none}]
   no-useless-return: 2
   no-var: 2
+  no-warning-comments: 1
   one-var: [2, never]
   prefer-arrow-callback: 2
   prefer-const: 2
